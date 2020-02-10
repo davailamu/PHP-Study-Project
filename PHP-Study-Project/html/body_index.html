@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Вход</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+      <label for="checkbox3">
+        <div class="login"></div>
+        <div class="auth" style="left:60%; top:50px">
+          <form action="auth.php" method="post">
+            <table>
+              <tr>
+                <td>Логин</td>
+                <td><input type="text" name="login" id="login" required></td>
+              </tr>
+              <tr>
+                <td>Пароль</td>
+                <td><input type="password" name="password" id="password" required></td>
+              </tr>
+              <tr>
+                <td>Повторите пароль</td>
+                <td><input type="password" name="r_password" id="r_password" required></td>
+              </tr>
+            </table>
+            <center><input type="submit" name="enter" value="Войти"></center>
+          </form>
+        </div>
+      </label>
+    </div>
+    <center><h2 style="margin-top: 50px">Присоединяйся!</h2></center>
+    <div class="reg" style="left:380px">
+      <form action="reg.php" method="post">
+          <table>
+            <tr>
+              <td>ФИО</td>
+              <td><input type="text" name="reg_fio" required></td>
+            </tr>
+            <tr>
+              <td>Логин</td>
+              <td><input type="text" name="reg_login" required></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><input type="email" name="reg_mail" required></td>
+            </tr>
+            <tr>
+              <td>Пароль</td>
+              <td><input type="password" name="reg_password" required></td>
+            </tr>
+            <tr>
+              <td>Повторите пароль</td>
+              <td><input type="password" name="reg_r_password" required></td>
+            </tr>
+            <tr>
+              <td>Номер телефона</td>
+              <td><input type="text" name="reg_phone" required></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><small>(формат: 291234567)</small></td>
+            </tr>
+            <tr>
+              <td>Пол</td>
+              <td><select name="reg_sex">
+                <option value="man">Мужской</option>
+                <option value="woman">Женский</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td>Сумма чисел на картинке</td>
+              <td><input type="text" name="salt" required></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><img src="captcha/captcha.php"></td>
+            </tr>
+          </table>
+        <center><input type="submit" name="register" value="Зарегистрироваться"></center>
+      </form>
+    </div>
+  </body>
+</html>

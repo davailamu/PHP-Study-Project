@@ -1,0 +1,139 @@
+body {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  background: url(https://images.unsplash.com/photo-1531156992292-d36397ee9184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+.footer, .header {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 30px;
+}
+
+.footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.auth, .reg {
+  text-align: right;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  height: auto;
+  width: 400px;
+  top: 100px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin-left: 200px;
+}
+
+input, select {
+  background: black;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  border-style: solid;
+  padding: 4px;
+  margin: 5px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  border-style: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#container {
+  position: absolute;
+  width: 29.54px;
+  height: 24px;
+  right: 52px;
+  top: 25px;
+}
+
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+.login {
+  background-image: url(https://im0-tub-ru.yandex.net/i?id=2050ff0e3b242a54c3370518a687ba77&n=33&w=150&h=150);
+  background-size: cover;
+  z-index: 10;
+  left: 97%;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+.login:hover {
+  cursor: pointer;
+}
+
+.auth {
+  opacity: 0;
+  transform-origin: right top;
+  visibility: hidden;
+  overflow: hidden;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.checkbox3:checked + label > .auth {
+  opacity: 0.9;
+  visibility: visible;
+  transform: scale(1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.files {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  font-size: 40px;
+}
+
+.contacts {
+  position: absolute;
+  width: 140px;
+  height: 48px;
+  left: 56px;
+  bottom: 15px;
+  color: #FFFFFF;
+}
+
+.social {
+  position: absolute;
+  align-items: baseline;
+  width: 150px;
+  height: 14px;
+  right: 56px;
+  bottom: 50px;
+}
